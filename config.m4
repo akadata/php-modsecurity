@@ -13,9 +13,9 @@ dnl [  --with-modsecurity             Include modsecurity support])
 
 dnl Otherwise use enable:
 
-dnl PHP_ARG_ENABLE(modsecurity, whether to enable modsecurity support,
+PHP_ARG_ENABLE(modsecurity, whether to enable modsecurity support,
 dnl Make sure that the comment is aligned:
-dnl [  --enable-modsecurity           Enable modsecurity support])
+[  --enable-modsecurity           Enable modsecurity support])
 
 if test "$PHP_MODSECURITY" != "no"; then
   dnl Write more examples of tests here...
