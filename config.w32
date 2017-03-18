@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("modsecurity", "for modsecurity support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("modsecurity", "enable modsecurity support", "no");
+
+if (PHP_MODSECURITY != "no") {
+	EXTENSION("modsecurity", "modsecurity.c", PHP_EXTNAME_SHARED, "/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1");
+}
+
